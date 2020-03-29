@@ -30,6 +30,7 @@ def AddImage(info, basename, dest, incremental):
 
 def OTA_InstallEnd(info, incremental):
   AddImage(info, "vbmeta.img", "/dev/block/platform/bootdevice/by-name/vbmeta", incremental)
+  AddImage(info, "vbmeta_system.img", "/dev/block/platform/bootdevice/by-name/vbmeta_system", incremental)
 
   bin_map = {
       'logo': ['logo']
