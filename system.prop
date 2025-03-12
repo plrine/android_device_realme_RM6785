@@ -6,6 +6,7 @@ fs_mgr.overlayfs.prefer_cache_backing_storage=true
 
 # Display
 debug.hwui.trace_gpu_resources=false
+sys.brightness.disable_gamma_conversion=true
 
 # IMS
 persist.dbg.volte_avail_ovr=1
