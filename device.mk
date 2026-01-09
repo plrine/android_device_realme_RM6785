@@ -69,6 +69,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     com.android.hardware.drm.clearkey
 
+# Bypass Lock State for Fenrir
+$(call soong_config_set_bool,fastbootd,bypass_lock_state,true)
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
