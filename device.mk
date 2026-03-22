@@ -49,6 +49,9 @@ $(call soong_config_set_bool,android_hardware_audio,skip_speaker_layout_channel_
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth-service.mediatek
 
+PRODUCT_PACKAGES += \
+   vendor.mediatek.hardware.bluetooth.audio@2.1.vendor
+
 # ConfigStore
 PRODUCT_PACKAGES += \
     disable_configstore
