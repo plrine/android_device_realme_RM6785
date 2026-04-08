@@ -352,9 +352,6 @@ PRODUCT_PACKAGES += \
     libbase_shim \
     libui-v32
 
-# V4A
-$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
-
 # Wi-Fi
 PRODUCT_PACKAGES += \
     TetheringConfigOverlayRM6785 \
