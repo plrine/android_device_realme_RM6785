@@ -331,7 +331,7 @@ AB_OTA_UPDATER := false
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb-service.mediatek-legacy
+    android.hardware.usb-service.mediatek
 
 # Vibrator
 PRODUCT_PACKAGES += \
