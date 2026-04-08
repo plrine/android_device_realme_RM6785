@@ -163,10 +163,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_SYSTEM_SERVER_DEBUG_INFO := false
 PRODUCT_OTHER_JAVA_DEBUG_INFO := false
 
-# Remove unwanted packages
-PRODUCT_PACKAGES += \
-    RemovePackages
-
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service \
