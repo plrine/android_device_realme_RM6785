@@ -163,3 +163,6 @@
 
 #MTK In-House TEE
 /dev/ttyACM0              0660   radio      radio
+
+# Charging
+/sys/class/power_supply/*  mmi_charging_enable    0660    system  system

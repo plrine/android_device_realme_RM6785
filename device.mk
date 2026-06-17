@@ -117,8 +117,7 @@ PRODUCT_PACKAGES += \
     init.project.rc \
     init.sensor_1_0.rc \
     init.RM6785.rc \
-    ueventd.mtk.rc \
-    ueventd.RM6785.rc
+    ueventd.mtk.rc
 
 PRODUCT_PACKAGES += \
     init_RM6785_vendor
