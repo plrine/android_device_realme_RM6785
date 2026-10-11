@@ -106,7 +106,7 @@ BOARD_EROFS_COMPRESS_HINTS := $(DEVICE_PATH)/configs/partitions/erofs_compress_h
 BOARD_EROFS_PCLUSTER_SIZE := 262144
 
 ifeq ($(TARGET_RO_FILE_SYSTEM_TYPE),ext4)
--include vendor/lineage/config/BoardConfigReservedSize.mk
+-include vendor/halcyon/config/BoardConfigReservedSize.mk
 endif
 
 BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := $(TARGET_RO_FILE_SYSTEM_TYPE)
