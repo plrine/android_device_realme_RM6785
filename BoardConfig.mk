@@ -46,6 +46,7 @@ BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
 BOARD_KERNEL_CMDLINE += kpti=off
 BOARD_KERNEL_CMDLINE += cgroup.memory=nokmem
 BOARD_KERNEL_CMDLINE += cgroup_disable=memory
+BOARD_KERNEL_CMDLINE += androidboot.serialconsole=0
 TARGET_KERNEL_SOURCE := kernel/realme/mt6785
 TARGET_KERNEL_CONFIG := RM6785_defconfig
 TARGET_KERNEL_NO_GCC := true
@@ -84,10 +85,6 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_PRODUCT := product
 TARGET_COPY_OUT_ODM := odm
 TARGET_COPY_OUT_SYSTEM_EXT := system_ext
-
-# Bootconfig
-BOARD_BOOTCONFIG += \
-    androidboot.serialconsole=0
 
 # Partitions (Dynamic)
 ifeq ($(WITH_GMS),true)
