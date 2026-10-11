@@ -42,11 +42,13 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 TARGET_SCREEN_DENSITY := 420
 
 # Kernel
-BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
-BOARD_KERNEL_CMDLINE += kpti=off
-BOARD_KERNEL_CMDLINE += cgroup.memory=nokmem
-BOARD_KERNEL_CMDLINE += cgroup_disable=memory
-BOARD_KERNEL_CMDLINE += androidboot.serialconsole=0
+BOARD_KERNEL_CMDLINE += \
+    bootopt=64S3,32N2,64N2 \
+    kpti=off \
+    cgroup.memory=nokmem \
+    cgroup_disable=memory \
+    androidboot.serialconsole=0
+
 TARGET_KERNEL_SOURCE := kernel/realme/mt6785
 TARGET_KERNEL_CONFIG := RM6785_defconfig
 TARGET_KERNEL_NO_GCC := true
